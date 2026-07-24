@@ -10,7 +10,7 @@ assets/icon.png       → icona dell'app usata nella pagina
 download/
   EIIS-Live-Guida-Installazione-e-Uso.pdf   → guida PDF (link dalla pagina)
 release-dmg/
-  EIIS-Live-1.4.10-arm64.dmg   → l'app (93 MB) → va caricata come RELEASE (vedi sotto)
+  EIIS-Live-1.5.0-arm64.dmg   → l'app (93 MB) → va caricata come RELEASE (vedi sotto)
 ```
 
 > Il dmg (93 MB) **non** va nel repo: GitHub blocca gli upload web oltre 25 MB.
@@ -40,14 +40,14 @@ Dopo ~1 minuto il sito è online su:
 
 ### 4. Carica l'app come Release
 Repo → **Releases** (a destra) → **Create a new release**:
-- **Tag**: `v1.4.10`
-- **Title**: `EIIS Live 1.4.10`
-- **Attach binaries**: trascina il file **`release-dmg/EIIS-Live-1.4.10-arm64.dmg`**
+- **Tag**: `v1.5.0`
+- **Title**: `EIIS Live 1.5.0`
+- **Attach binaries**: trascina il file **`release-dmg/EIIS-Live-1.5.0-arm64.dmg`**
 - **Publish release**
 
 ### 5. Fatto ✅
 Il tasto **Download** sulla pagina scarica automaticamente il dmg dall'**ultima
-release** (usa l'indirizzo `…/releases/latest/download/EIIS-Live-1.4.10-arm64.dmg`,
+release** (usa l'indirizzo `…/releases/latest/download/EIIS-Live-1.5.0-arm64.dmg`,
 costruito da solo in base al nome del tuo repo).
 
 ---
@@ -55,11 +55,11 @@ costruito da solo in base al nome del tuo repo).
 ## Aggiornare a una versione futura
 1. Crea una **nuova Release** con l'ultimo dmg (stesso nome file, oppure aggiorna
    `ASSET` nello `<script>` in fondo a `index.html`).
-2. Se cambi numero di versione, aggiorna i testi "1.4.10" in `index.html`.
+2. Se cambi numero di versione, aggiorna i testi "1.5.0" in `index.html`.
 
 ## Note
 - Se usi un **dominio personalizzato** (non `*.github.io`), imposta a mano il link:
   nello `<script>` in fondo a `index.html`, sostituisci la parte automatica con
-  `https://github.com/<owner>/<repo>/releases/latest/download/EIIS-Live-1.4.10-arm64.dmg`.
+  `https://github.com/<owner>/<repo>/releases/latest/download/EIIS-Live-1.5.0-arm64.dmg`.
 - La pagina è **statica e autonoma** (nessuna dipendenza esterna), tema chiaro/scuro
   automatico, responsive.
